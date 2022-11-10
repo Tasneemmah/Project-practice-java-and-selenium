@@ -9,9 +9,7 @@ public class myfirstproject {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "C:\\my new drive\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		
-		//System.out.println(driver.findElement(By.id("label-one")).getText().toUpperCase());
-		driver.get("http://127.0.0.1:5502/index.html");
+	    driver.get("http://127.0.0.1:5502/index.html");
 		driver.manage().window().maximize();
 		
 		driver.findElement(By.id("email-input")).sendKeys("tasneemmahmuod@gmail.com");
